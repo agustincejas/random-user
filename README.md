@@ -2,6 +2,8 @@
 - npm i
 - npm run start
 
+### Tests
+- npm run test
 
 ### Config
 There is no need for additional setup.
