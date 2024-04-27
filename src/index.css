@@ -2,3 +2,27 @@
   background-color: 'grey';
   opacity: 0.3
 }
+
+@keyframes colors {
+  from {
+    color: #EA4C89;
+  }
+}
+
+.animated {
+  animation: blink 5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes blink { 50% { color: #EA4C89; }  }
+
+
+.animatedImg {
+  animation: fill 5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fill {
+  50%
+  { background-color: #EA4C89;; }
+}

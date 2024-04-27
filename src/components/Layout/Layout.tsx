@@ -34,7 +34,7 @@ const Layout = () => {
         <StyledSectionContent>
           {
             user && user?.first
-            ? <User user={user}  prevUser={prevUser}/>
+            ? <User user={user} key={user.id} prevUser={prevUser}/>
             : <EmptyState />
           }
           <StyledButton disabled={loading} onClick={handleGetNextUser}>Get random user</StyledButton>

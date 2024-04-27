@@ -2,9 +2,15 @@ export interface IUser {
   name: Name;
   picture: Picture;
   location: Location;
+  id: Id
 }
 
+interface Id {
+  name: string;
+  value: string;
+}
 export interface IUserDetails {
+  id: string;
   first: string;
   last: string;
   country: string;

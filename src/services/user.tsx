@@ -16,6 +16,7 @@ const mapToUserDetails = (user: IUser): IUserDetails => {
     last: user.name.last,
     country: user.location.country,
     picture: user.picture.large,
-    thumbnail: user.picture.thumbnail
+    thumbnail: user.picture.thumbnail,
+    id: user.id.value
   }
 }

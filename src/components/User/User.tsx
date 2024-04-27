@@ -16,13 +16,13 @@ const User = ({ user, prevUser }: UserProps) => (
         <Thumbnail src={user.picture} alt="user image"/>
       </StyledThumbnail>
       <StyledName>
-        <UserProperty prop={user.first} prevProp={prevUser.first} type={UserPropertiesEnum.LABEL} />
-        <UserProperty prop={user.last} prevProp={prevUser.last} type={UserPropertiesEnum.LABEL} />
+        <UserProperty prop={user.first} animated={user.first !== prevUser.first} type={UserPropertiesEnum.LABEL} />
+        <UserProperty prop={user.last} animated={user.last !== prevUser.last} type={UserPropertiesEnum.LABEL} />
       </StyledName>
     </StyledNameContainer>
-    <UserProperty prop={user.picture} prevProp={prevUser.picture} type={UserPropertiesEnum.IMAGE} />
+    <UserProperty prop={user.picture} animated={user.picture !== prevUser.picture} type={UserPropertiesEnum.IMAGE} />
     <StyledCountry>
-      <UserProperty prop={user.country} prevProp={prevUser.country} type={UserPropertiesEnum.LABEL} />
+      <UserProperty prop={user.country} animated={user.country !== prevUser.country} type={UserPropertiesEnum.LABEL} />
     </StyledCountry>
   </StyledUser>
 )
